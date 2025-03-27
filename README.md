@@ -1,6 +1,3 @@
-Here's a comprehensive README.md file for your Azure Service Bus Explorer project:
-
-```markdown:README.md
 # Azure Service Bus Explorer
 
 A desktop application built with Electron that allows you to explore and interact with Azure Service Bus resources. This tool provides a user-friendly interface for managing topics, queues, and messages in Azure Service Bus.
@@ -25,7 +22,7 @@ A desktop application built with Electron that allows you to explore and interac
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/fabienmw/azure-service-bus-explorer.git
 cd azure-service-bus-explorer
 ```
 
