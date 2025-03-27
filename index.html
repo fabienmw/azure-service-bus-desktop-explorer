@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Azure Service Bus Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Azure Service Bus Explorer</h1>
+    
+    <div class="connection-panel">
+      <h2>Connection</h2>
+      <div class="input-group">
+        <input type="text" id="connectionString" placeholder="Enter your Azure Service Bus connection string">
+        <button id="connectBtn">Connect</button>
+      </div>
+      <div id="connectionStatus"></div>
+    </div>
+    
+    <div class="main-content">
+      <div class="sidebar">
+        <div class="section">
+          <h3>Topics</h3>
+          <button id="refreshTopicsBtn">Refresh</button>
+          <ul id="topicsList" class="list"></ul>
+        </div>
+        
+        <div class="section">
+          <h3>Queues</h3>
+          <button id="refreshQueuesBtn">Refresh</button>
+          <ul id="queuesList" class="list"></ul>
+        </div>
+      </div>
+      
+      <div class="message-panel">
+        <div class="message-actions">
+          <h3>Message Actions</h3>
+          <div class="selected-entity">Selected: <span id="selectedEntity">None</span></div>
+          <button id="peekBtn" disabled>Peek Message</button>
+          <button id="receiveDeleteBtn" disabled>Receive & Delete Message</button>
+        </div>
+        
+        <div class="message-content">
+          <h3>Message Content</h3>
+          <pre id="messageContent">No message selected</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="renderer.js"></script>
+</body>
+</html>
